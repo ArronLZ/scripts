@@ -1,7 +1,8 @@
 main = FALSE
 
 if (!main) {
-  cat("pdfTOpng(pdf_folder = pdf_folder, png_output_folder = png_output_folder)", "\n")
+  cat(check_pack("pdftools"), "\n", 
+      "pdfTOpng(pdf_folder = pdf_folder, png_output_folder = png_output_folder)", "\n")
 }
 
 # function --------------------
