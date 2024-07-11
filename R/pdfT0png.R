@@ -49,7 +49,7 @@ pdfTOpng <- function(pdf_folder, pdf_files, png_output_folder) {
     num_pages <- pdf$pages
     # Loop through each page in the PDF file
     for (page in 1:num_pages) {
-      supressWarnings({
+      suppressWarnings({
         png_output_file <- file.path(png_output_folder, 
                                      paste0(tools::file_path_sans_ext(basename(pdf_file)), 
                                             "_page", page, ".png"))
